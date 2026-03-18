@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Date Difference Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .container { border: 2px solid #ccc; display: inline-block; padding: 20px; border-radius: 10px; }
+        input { margin: 10px; padding: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Difference Between Two Dates</h2>
+        <form method="POST">
+            <label>Start Date:</label><br>
+            <input type="date" name="date1" required><br>
+            <label>End Date:</label><br>
+            <input type="date" name="date2" required><br>
+            <button type="submit">Calculate Difference</button>
+        </form>
+
+        {% if result %}
+            <p><strong>{{ result }}</strong></p>
+        {% endif %}
+    </div>
+</body>
+</html>
